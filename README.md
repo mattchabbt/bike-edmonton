@@ -1,1 +1,1 @@
-This repo is for the DESN340_Project4 Submission
+This repo is for the DESN340_Project4 Bike Edmonton Submission
