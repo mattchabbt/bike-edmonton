@@ -7,10 +7,20 @@
     margin: 0;
 }
 
+/* Imported Custom Font */
+/* Satoshi Regular */
+@font-face {
+    font-family: "Satoshi";
+    src: url('fonts/Satoshi-Regular.otf') format('OpenType');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Layout*/
 body {
     width: 100%;
     background-color: white;
+    font-family: "Satoshi", "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 .padding-default {
