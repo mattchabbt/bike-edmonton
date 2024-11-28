@@ -16,6 +16,22 @@
     font-style: normal;
 }
 
+/* Satoshi Medium */
+@font-face {
+    font-family: "Satoshi";
+    src: url('fonts/Satoshi-Medium.otf') format('OpenType');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Satoshi Bold */
+@font-face {
+    font-family: "Satoshi";
+    src: url('fonts/Satoshi-Bold.otf') format('OpenType');
+    font-weight: bold;
+    font-style: normal;
+}
+
 /* Layout*/
 body {
     width: 100%;
@@ -84,9 +100,8 @@ body {
     h2 { font-size: 64px; }
     h2#h2alt { font-size: 44px; }
     h3 { font-size: 32px; }
-    p { font-size: 12px; }
     li.nav-item { font-size: 16px; }
-    body { font-size: 18px; }
+    body, p { font-size: 18px; }
     body.body-large { font: 24px; }
     body.body-large-bold { font: bold 24px;  }
 
