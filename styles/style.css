@@ -1,12 +1,3 @@
-/* GLOBAL STYLES */
-.margin-default {
-    margin: 0 80px;
-}
-
-.margin-zero {
-    margin: 0;
-}
-
 /* Imported Custom Font */
 /* Satoshi Regular */
 @font-face {
@@ -30,6 +21,27 @@
     font-weight: bold;
     font-style: normal;
 }
+
+/* GLOBAL STYLES */
+.margin-default {
+    margin: 0 80px;
+}
+
+.margin-zero {
+    margin: 0;
+}
+
+.all-caps {
+    text-transform: uppercase;
+}
+
+.color-primary { color: #03387C }
+.color-primary-alt { color: #02214A }
+.color-secondary { color: #FF6700 }
+.color-secondary-light { color: #FF8533 }
+.color-secondary-accent { color: #8F5833 }
+.color-accent-01 { color: #FFFDFA }
+.color-accent-02 { color: #292828 }
 
 /* Layout*/
 body {
