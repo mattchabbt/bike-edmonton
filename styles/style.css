@@ -7,6 +7,7 @@
     font-style: normal;
 }
 
+/* Satoshi Italic */
 @font-face {
     font-family: "Satoshi";
     src: url('fonts/Satoshi-Italic.otf') format('OpenType');
@@ -35,23 +36,38 @@
     text-transform: uppercase;
 }
 
-.color-primary { color: #03387C }
-.color-primary-alt { color: #02214A }
-.color-secondary { color: #FF6700 }
-.color-secondary-light { color: #FF8533 }
-.color-secondary-accent { color: #8F5833 }
-.color-accent-01 { color: #FFFDFA }
-.color-accent-02 { color: #292828 }
+/* Color Palette */
+.color-text-primary { color: #03387C; }
+.color-text-primary-alt { color: #02214A; }
+.color-text-secondary { color: #FF6700; }
+.color-text-secondary-light { color: #FF8533; }
+.color-text-secondary-accent { color: #8F5833; }
+.color-text-accent-01 { color: #FFFDFA; }
+.color-text-accent-02 { color: #292828; }
+
+.color-bg-primary { background-color: #03387C; }
+.color-bg-primary-alt { background-color: #02214A; }
+.color-bg-secondary { background-color: #FF6700; }
+.color-bg-secondary-light { background-color: #FF8533; }
+.color-bg-secondary-accent { background-color: #8F5833; }
+.color-bg-accent-01 { background-color: #FFFDFA; }
+.color-bg-accent-02 { background-color: #292828; }
 
 /* Layout*/
 body {
     width: 100%;
-    background-color: white;
+    background-color: #FFFDFA;
+    color: #292828;
     font-family: "Satoshi", "Open Sans", Arial, Helvetica, sans-serif;
 }
 
+button a, ul a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .padding-default {
-    padding: 104px 0 144px 0;
+    padding: 0 80px;
 }
 
 .padding-80 {
@@ -98,6 +114,27 @@ body {
     background-color: white;
 }
 
+/* Header */
+
+header {
+    background-color: #02214A;
+}
+
+#top-nav li {
+    display: inline;
+    list-style-type: none;
+}
+
+#top-nav li:not(:last-child) {
+    margin-right: 64px;
+}
+
+#bike-edmonton-logo img {
+    display: inline;
+    width: 80px;
+    border-bottom: solid 2px #242424;
+}
+
 /* Smartphone */
 @media screen and (max-width: 480px) {
     .hidden-on-mobile {
@@ -107,6 +144,7 @@ body {
 
 /* Laptop & Desktop */
 @media screen and (min-width: 769px) {
+    /* Font Size */
     h1 { font-size: 88px; }
     h2 { font-size: 64px; }
     h2#h2alt { font-size: 44px; }
