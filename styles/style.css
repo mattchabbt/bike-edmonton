@@ -23,19 +23,6 @@
     font-style: normal;
 }
 
-/* GLOBAL STYLES */
-.margin-default {
-    margin: 0 80px;
-}
-
-.margin-zero {
-    margin: 0;
-}
-
-.all-caps {
-    text-transform: uppercase;
-}
-
 /* Color Palette */
 .color-text-primary { color: #03387C; }
 .color-text-primary-alt { color: #02214A; }
@@ -53,9 +40,22 @@
 .color-bg-accent-01 { background-color: #FFFDFA; }
 .color-bg-accent-02 { background-color: #292828; }
 
-/* Layout*/
+/* GLOBAL STYLES */
+.margin-default {
+    margin: 0 80px;
+}
+
+.margin-zero {
+    margin: 0;
+}
+
+.all-caps {
+    text-transform: uppercase;
+}
+
 body {
     width: 100%;
+    font-size: 16px;
     background-color: #FFFDFA;
     color: #292828;
     font-family: "Satoshi", "Open Sans", Arial, Helvetica, sans-serif;
@@ -66,8 +66,21 @@ button a, ul a {
     color: inherit;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3 { margin: 0; }
+
+/* Layout*/
+
 .padding-default {
     padding: 0 80px;
+}
+
+.padding-zero {
+    padding: 0;
 }
 
 .padding-80 {
@@ -94,6 +107,10 @@ button a, ul a {
     padding: 8px 0;
 }
 
+.padding-16 {
+    padding: 16px 0;
+}
+
 .padding-48-24 {
     padding: 48px 24px;
 }
@@ -114,10 +131,130 @@ button a, ul a {
     background-color: white;
 }
 
+/* Flexbox */
+
+.flex-row {
+    display: flex;
+    flex-direction: row; /* default value already */
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.space-between-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.space-between-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.justify-content-right {
+    justify-content: right;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
+}
+
+.flex-4 {
+    flex: 4;
+}
+
+.flex-5 {
+    flex: 5;
+}
+
+.flex-6 {
+    flex: 6;
+}
+
+.flex-7 {
+    flex: 7;
+}
+
+.flex-8 {
+    flex: 8;
+}
+
+.gap-8 {
+    gap: 8px;
+}
+
+.gap-12 {
+    gap: 12px;
+}
+
+.gap-24 {
+    gap: 24px;
+}
+
+.gap-32 {
+    gap: 32px;
+}
+
+.gap-40 {
+    gap: 40px;
+}
+
+.gap-48 {
+    gap: 48px;
+}
+
+.gap-64 {
+    gap: 64px;
+}
+
+.gap-104 {
+    gap: 104px;
+}
+
+/* Grid */
+
+#top-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    white-space: nowrap;
+}
+
 /* Header */
 
 header {
     background-color: #02214A;
+    height: 140px;
+}
+
+#top-nav {
+    height: 140px;
 }
 
 #top-nav li {
@@ -125,15 +262,31 @@ header {
     list-style-type: none;
 }
 
-#top-nav li:not(:last-child) {
+nav, #top-left-nav, #top-right-nav {
+    height: 140px;
+}
+
+/* #top-nav li:not(:last-child) {
     margin-right: 64px;
+} */
+
+#bike-edmonton-logo {
+    position: relative;
+    z-index: 2;
+    margin: auto;
 }
 
 #bike-edmonton-logo img {
-    display: inline;
     width: 80px;
-    border-bottom: solid 2px #242424;
 }
+
+/* Hero 01 Section */
+.hero1 {
+    background-image: url(../images/hero-image-01.jpg);
+    height: 100%;
+}
+
+/* Hero 02 Section */
 
 /* Smartphone */
 @media screen and (max-width: 480px) {
@@ -150,7 +303,7 @@ header {
     h2#h2alt { font-size: 44px; }
     h3 { font-size: 32px; }
     li.nav-item { font-size: 16px; }
-    body, p { font-size: 18px; }
+    body, p, ul { font-size: 16px; }
     body.body-large { font: 24px; }
     body.body-large-bold { font: bold 24px; }
 
