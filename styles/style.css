@@ -75,61 +75,21 @@ h1, h2, h3 { margin: 0; }
 
 /* Layout*/
 
-.padding-default {
-    padding: 0 80px;
-}
+.padding-default { padding: 0 80px; }
+.padding-zero { padding: 0; }
+.padding-80 { padding: 80px 0; }
+.padding-80-all { padding: 80px; }
+.padding-40 { padding: 40px 0; }
+.padding-24 { padding: 24px 0px; }
+.padding-24-all { padding: 24px; }
+.padding-8 { padding: 8px 0; }
+.padding-16 { padding: 16px 0; }
+.padding-48-24 { padding: 48px 24px; }
+.padding-48-all { padding: 48px; }
+.padding-bottom { padding-bottom: 144px; }
 
-.padding-zero {
-    padding: 0;
-}
-
-.padding-80 {
-    padding: 80px 0;
-}
-
-.padding-80-all {
-    padding: 80px;
-}
-
-.padding-40 {
-    padding: 40px 0;
-}
-
-.padding-24 {
-    padding: 24px 0px;
-}
-
-.padding-24-all {
-    padding: 24px;
-}
-
-.padding-8 {
-    padding: 8px 0;
-}
-
-.padding-16 {
-    padding: 16px 0;
-}
-
-.padding-48-24 {
-    padding: 48px 24px;
-}
-
-.padding-48-all {
-    padding: 48px;
-}
-
-.padding-bottom {
-    padding-bottom: 144px;
-}
-
-.sect-dark {
-    background-color: #242424;
-}
-
-.background-white {
-    background-color: white;
-}
+.sect-dark { background-color: #242424; }
+.background-white { background-color: white; }
 
 /* Flexbox */
 
@@ -174,69 +134,23 @@ h1, h2, h3 { margin: 0; }
     align-items: center;
 }
 
-.flex-1 {
-    flex: 1;
-}
+.flex-1 { flex: 1; }
+.flex-2 { flex: 2; }
+.flex-3 { flex: 3; }
+.flex-4 { flex: 4; }
+.flex-5 { flex: 5; }
+.flex-6 { flex: 6; }
+.flex-7 { flex: 7; }
+.flex-8 { flex: 8; }
 
-.flex-2 {
-    flex: 2;
-}
-
-.flex-3 {
-    flex: 3;
-}
-
-.flex-4 {
-    flex: 4;
-}
-
-.flex-5 {
-    flex: 5;
-}
-
-.flex-6 {
-    flex: 6;
-}
-
-.flex-7 {
-    flex: 7;
-}
-
-.flex-8 {
-    flex: 8;
-}
-
-.gap-8 {
-    gap: 8px;
-}
-
-.gap-12 {
-    gap: 12px;
-}
-
-.gap-24 {
-    gap: 24px;
-}
-
-.gap-32 {
-    gap: 32px;
-}
-
-.gap-40 {
-    gap: 40px;
-}
-
-.gap-48 {
-    gap: 48px;
-}
-
-.gap-64 {
-    gap: 64px;
-}
-
-.gap-104 {
-    gap: 104px;
-}
+.gap-8 { gap: 8px; }
+.gap-12 { gap: 12px; }
+.gap-24 { gap: 24px; }
+.gap-32 { gap: 32px; }
+.gap-40 { gap: 40px; }
+.gap-48 { gap: 48px; }
+.gap-64 { gap: 64px; }
+.gap-104 { gap: 104px; }
 
 /* Grid */
 
@@ -246,52 +160,11 @@ h1, h2, h3 { margin: 0; }
     white-space: nowrap;
 }
 
-/* Header */
-
-header {
-    background-color: #02214A;
-    height: 140px;
-}
-
-#top-nav {
-    height: 140px;
-}
-
-#top-nav li {
-    display: inline;
-    list-style-type: none;
-}
-
-nav, #top-left-nav, #top-right-nav {
-    height: 140px;
-}
-
-/* #top-nav li:not(:last-child) {
-    margin-right: 64px;
-} */
-
-#bike-edmonton-logo {
-    position: relative;
-    z-index: 2;
-    margin: auto;
-}
-
-#bike-edmonton-logo img {
-    width: 80px;
-}
-
-/* Hero 01 Section */
-.hero1 {
-    background-image: url(../images/hero-image-01.jpg);
-    height: 100%;
-}
-
-/* Hero 02 Section */
-
 /* Smartphone */
 @media screen and (max-width: 480px) {
+    /* hides content on mobile verison */
     .hidden-on-mobile {
-        display: none;  /* hides content */
+        display: none;
     }
 }
 
@@ -307,7 +180,62 @@ nav, #top-left-nav, #top-right-nav {
     body.body-large { font: 24px; }
     body.body-large-bold { font: bold 24px; }
 
+    /* hides content on desktop verison */
     .hidden-on-desktop {
-        display: none;  /* hides content */
+        display: none;  
+    }
+
+    /* Header */
+
+    header {
+        background-color: #02214A;
+        height: 140px;
+    }
+
+    #top-nav {
+        height: 140px;
+    }
+
+    #top-nav li {
+        display: inline;
+        list-style-type: none;
+    }
+
+    nav, #top-left-nav, #top-right-nav {
+        height: 140px;
+    }
+
+    /* #top-nav li:not(:last-child) {
+        margin-right: 64px;
+    } */
+
+    #bike-edmonton-logo {
+        position: relative;
+        z-index: 2;
+        margin: auto;
+    }
+
+    #bike-edmonton-logo img {
+        width: 80px;
+    }
+
+    /* Hero 01 Section */
+
+    .hero1-info {
+        background-image: url(../images/hero-image-01.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 175px;
+    }
+
+    /* Hero 02 Section */
+
+    .hero2-info {
+        background-image: url(../images/hero-image-02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
     }
 }

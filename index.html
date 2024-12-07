@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <header class="padding-default">
+    <header id="header" class="padding-default">
         <!-- Desktop Nav -->
         <nav id="top-nav" class="hidden-on-mobile color-primary">
             <ul id="top-left-nav" class="flex-row align-center gap-64 color-text-accent-01">
@@ -29,8 +29,23 @@
         </nav>
         <!-- Mobile Navigation -->
     </header>
-    <section>
-        <div id="hero1" class="hero1">
+    <!-- Hero Image 1 -->
+    <section id="hero1">
+        <!-- Desktop Version -->
+        <div id="hero-info" class="hero1-info hidden-on-mobile padding-default color-text-accent-01">
+            <h1>Cycling For Everyone</h1>
+            <p><b>
+                Whether you ride once a week or year-round, Bike Edmonton
+                gives you the tools you need to enjoy cycling.
+            </b></p>
+            <p><b>
+                Our vision is a city where cycling is safe, widespread, and 
+                accessible to people of all comfort levels.
+            </b></p>
+            <button class="btn-filled"><a class="all-caps">Donate Now</a></button>
+        </div>
+        <!-- Mobile Version -->
+        <div id="hero-info" class="hero1-info hidden-on-desktop padding-default color-text-accent-01">
             <h1>Cycling For Everyone</h1>
             <p><b>
                 Whether you ride once a week or year-round, Bike Edmonton
@@ -44,23 +59,25 @@
         </div>
     </section>
     <!-- Hero Image 2 -->
-    <section>
-        <h2>Your Help Makes Everything Possible!</h2>
+    <section id="hero2">
+        <div id="hero2-info" class="hero2-info padding-default color-text-accent-01">
+            <h2>Your Help Makes Everything Possible!</h2>
         <p>Our work has supported funding for the Bike Plan, bike lane construction, and programs that give people resources they need to ride.</p>
         <p>We have helped thousands of people find a bike to ride and learn to fix their bike. 
             Your financial support makes it possible for us to keep doing this work!</p>
         <p>Other ways to support us: donate your <u>used bike</u>, <u>subscribe</u> to our newsletter, or get your <u>Bike Edmonton membership</u>.</p>
+        </div>
     </section>
     <!-- Blog Posts -->
-    <section>
+    <section id="blogs">
 
     </section>
     <!-- Our Vision -->
-    <section>
+    <section id="our-vision">
 
     </section>
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
 
     </footer>
 </body>
