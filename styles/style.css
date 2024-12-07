@@ -73,6 +73,20 @@ ul {
 
 h1, h2, h3 { margin: 0; }
 
+button.btn-filled {
+    width: 224px;
+    height: 48px;
+    padding: 16px 20px;
+    border-style: none;
+    border-radius: 16px;
+    color: #FFFDFA;
+    background-color: #FF6700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Layout*/
 
 .padding-default { padding: 0 80px; }
@@ -179,6 +193,7 @@ h1, h2, h3 { margin: 0; }
     body, p, ul { font-size: 16px; }
     body.body-large { font: 24px; }
     body.body-large-bold { font: bold 24px; }
+    button.btn-filled a.all-caps b { font-size: 20px; }
 
     /* hides content on desktop verison */
     .hidden-on-desktop {
@@ -188,7 +203,7 @@ h1, h2, h3 { margin: 0; }
     /* Header */
 
     header {
-        background-color: #02214A;
+        background-color: #03387C;
         height: 140px;
     }
 
@@ -221,21 +236,37 @@ h1, h2, h3 { margin: 0; }
 
     /* Hero 01 Section */
 
+    #hero1 {
+        background: linear-gradient(260deg, rgba(0, 0, 0, 0.00) 3.8%, rgba(0, 0, 0, 0.19) 26.33%, rgba(0, 0, 0, 0.80) 95.17%), url(../images/hero-image-01.jpg) top center / cover no-repeat;
+        /* background-size: cover; */
+        background-position: top 20% right 50%;
+        height: 864px;
+    }
+
     .hero1-info {
-        background-image: url(../images/hero-image-01.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        padding-bottom: 175px;
+        /* padding: 30% 0 175px 80px; */
+        position: absolute;
+        bottom: 175px;
+        width: 954px;
+        height: auto;
+    }
+
+    div#hero-info p {
+        padding-right: 178px;
+        margin-top: 20px;
     }
 
     /* Hero 02 Section */
 
-    .hero2-info {
+    #hero2 {
         background-image: url(../images/hero-image-02.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        height: 100%;
+        height: 971px;
+    }
+
+    .hero2-info {
+
     }
 }
