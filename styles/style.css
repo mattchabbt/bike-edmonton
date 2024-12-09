@@ -77,6 +77,7 @@ button.btn-filled {
     width: 224px;
     height: 48px;
     padding: 16px 20px;
+    margin-top: 44px;
     border-style: none;
     border-radius: 16px;
     color: #FFFDFA;
@@ -190,9 +191,9 @@ button.btn-filled {
     h2#h2alt { font-size: 44px; }
     h3 { font-size: 32px; }
     li.nav-item { font-size: 16px; }
-    body, p, ul { font-size: 16px; }
-    body.body-large { font: 24px; }
-    body.body-large-bold { font: bold 24px; }
+    body, b, p, ul { font-size: 18px; }
+    .body-large { font-size: 24px; }
+    .body-large-bold { font: bold 24px "Satoshi", sans-serif; }
     button.btn-filled a.all-caps b { font-size: 20px; }
 
     /* hides content on desktop verison */
@@ -238,7 +239,6 @@ button.btn-filled {
 
     #hero1 {
         background: linear-gradient(260deg, rgba(0, 0, 0, 0.00) 3.8%, rgba(0, 0, 0, 0.19) 26.33%, rgba(0, 0, 0, 0.80) 95.17%), url(../images/hero-image-01.jpg) top center / cover no-repeat;
-        /* background-size: cover; */
         background-position: top 20% right 50%;
         height: 864px;
     }
@@ -253,20 +253,55 @@ button.btn-filled {
 
     div#hero-info p {
         padding-right: 178px;
+    }
+
+    p.hero1-p1 {
         margin-top: 20px;
+        margin-bottom: 32px;
     }
 
     /* Hero 02 Section */
 
-    #hero2 {
-        background-image: url(../images/hero-image-02.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+    #hero2-image {
+        background: url(../images/hero-image-02.jpg) center / cover no-repeat;
+        /* background-attachment: fixed; */
         height: 971px;
+        z-index: -1;
+    }
+
+    .blur-filter {
+        background-color: rgba(0, 0, 0, 0.64);
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(4px);
     }
 
     .hero2-info {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        text-align: center;
+        width: 1147px;
+    }
 
+    .hero2-p1 {
+        margin: 88px auto 0 auto;
+        width: 821px;
+    }
+
+    .hero2-p2 {
+        margin: 44px 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 913px;
+    }
+
+    .hero2-p3 {
+        margin: 44px 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 662px;
     }
 }
