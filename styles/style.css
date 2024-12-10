@@ -23,31 +23,7 @@
     font-style: normal;
 }
 
-/* Color Palette */
-.color-text-primary { color: #03387C; }
-.color-text-primary-alt { color: #02214A; }
-.color-text-secondary { color: #FF6700; }
-.color-text-secondary-light { color: #FF8533; }
-.color-text-secondary-accent { color: #8F5833; }
-.color-text-accent-01 { color: #FFFDFA; }
-.color-text-accent-02 { color: #292828; }
-
-.color-bg-primary { background-color: #03387C; }
-.color-bg-primary-alt { background-color: #02214A; }
-.color-bg-secondary { background-color: #FF6700; }
-.color-bg-secondary-light { background-color: #FF8533; }
-.color-bg-secondary-accent { background-color: #8F5833; }
-.color-bg-accent-01 { background-color: #FFFDFA; }
-.color-bg-accent-02 { background-color: #292828; }
-
 /* GLOBAL STYLES */
-.margin-default {
-    margin: 0 80px;
-}
-
-.margin-zero {
-    margin: 0;
-}
 
 .all-caps {
     text-transform: uppercase;
@@ -66,12 +42,10 @@ button a, ul a {
     color: inherit;
 }
 
-ul {
+ul, p, h1, h2, h3 {
     padding: 0;
     margin: 0;
 }
-
-h1, h2, h3 { margin: 0; }
 
 h2#h2-alt {
     color: #FF8533;
@@ -92,7 +66,27 @@ button.btn-filled {
     align-items: center;
 }
 
+/* Color Palette */
+.color-text-primary { color: #03387C; }
+.color-text-primary-alt { color: #02214A; }
+.color-text-secondary { color: #FF6700; }
+.color-text-secondary-light { color: #FF8533; }
+.color-text-secondary-accent { color: #8F5833; }
+.color-text-accent-01 { color: #FFFDFA; }
+.color-text-accent-02 { color: #292828; }
+
+.color-bg-primary { background-color: #03387C; }
+.color-bg-primary-alt { background-color: #02214A; }
+.color-bg-secondary { background-color: #FF6700; }
+.color-bg-secondary-light { background-color: #FF8533; }
+.color-bg-secondary-accent { background-color: #8F5833; }
+.color-bg-accent-01 { background-color: #FFFDFA; }
+.color-bg-accent-02 { background-color: #292828; }
+
 /* Layout*/
+
+.margin-default { margin: 0 80px; }
+.margin-zero { margin: 0; }
 
 .padding-default { padding: 0 80px; }
 .padding-zero { padding: 0; }
@@ -140,13 +134,8 @@ button.btn-filled {
     justify-content: space-between;
 }
 
-.justify-content-right {
-    justify-content: right;
-}
-
-.justify-content-center {
-    justify-content: center;
-}
+.justify-content-right { justify-content: right; }
+.justify-content-center { justify-content: center; }
 
 .align-center {
     display: flex;
@@ -182,9 +171,7 @@ button.btn-filled {
 /* Smartphone */
 @media screen and (max-width: 480px) {
     /* hides content on mobile verison */
-    .hidden-on-mobile {
-        display: none;
-    }
+    .hidden-on-mobile { display: none; }
 }
 
 /* Laptop & Desktop */
@@ -196,14 +183,13 @@ button.btn-filled {
     h3 { font-size: 32px; }
     li.nav-item { font-size: 16px; }
     body, b, p, ul { font-size: 18px; }
-    .body-large { font-size: 24px; }
-    .body-large-bold { font: bold 24px "Satoshi", sans-serif; }
-    button.btn-filled a.all-caps b { font-size: 20px; }
+    .body-lg { font-size: 24px; }
+    .body-lg-bold { font: bold 24px "Satoshi", sans-serif; }
+    button { font-size: 20px; }
+    button a b { font-size: 20px; }
 
     /* hides content on desktop verison */
-    .hidden-on-desktop {
-        display: none;  
-    }
+    .hidden-on-desktop { display: none; }
 
     /* Header */
 
@@ -316,6 +302,7 @@ button.btn-filled {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 40px;
     }
 
     #our-vis-h2 {
@@ -326,8 +313,6 @@ button.btn-filled {
 
     p#our-vis-p1 {
         /* margin: 40px 112px 0 112px; */
-        margin-top: 40px;
-        margin-bottom: 0;
         color: #FFFDFA;
         width: 1062px;
         text-align: center;
