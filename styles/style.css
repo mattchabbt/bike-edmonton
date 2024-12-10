@@ -73,6 +73,10 @@ ul {
 
 h1, h2, h3 { margin: 0; }
 
+h2#h2-alt {
+    color: #FF8533;
+}
+
 button.btn-filled {
     width: 224px;
     height: 48px;
@@ -188,7 +192,7 @@ button.btn-filled {
     /* Font Size */
     h1 { font-size: 88px; }
     h2 { font-size: 64px; }
-    h2#h2alt { font-size: 44px; }
+    h2.h2alt, h2#h2alt { font-size: 44px; }
     h3 { font-size: 32px; }
     li.nav-item { font-size: 16px; }
     body, b, p, ul { font-size: 18px; }
@@ -303,5 +307,29 @@ button.btn-filled {
         margin-left: auto;
         margin-right: auto;
         width: 662px;
+    }
+
+    /* Our Vision Section */
+    
+    #our-vis {
+        padding: 91px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #our-vis-h2 {
+        color: #FF6700;
+        width: 1111px;
+        text-align: center; 
+    }
+
+    p#our-vis-p1 {
+        /* margin: 40px 112px 0 112px; */
+        margin-top: 40px;
+        margin-bottom: 0;
+        color: #FFFDFA;
+        width: 1062px;
+        text-align: center;
     }
 }
