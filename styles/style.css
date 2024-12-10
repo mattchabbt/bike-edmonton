@@ -1,26 +1,46 @@
 /* Imported Custom Font */
 /* Satoshi Regular */
 @font-face {
-    font-family: "Satoshi";
-    src: url('fonts/Satoshi-Regular.otf') format('OpenType');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Satoshi-Regular';
+    src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
+         url('../fonts/Satoshi-Regular.woff') format('woff'),
+         url('../fonts/Satoshi-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
 }
+
+/* Satoshi Medium */
+@font-face {
+    font-family: 'Satoshi-Medium';
+    src: url('../fonts/Satoshi-Medium.woff2') format('woff2'),
+         url('../fonts/Satoshi-Medium.woff') format('woff'),
+         url('../fonts/Satoshi-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
 
 /* Satoshi Italic */
 @font-face {
-    font-family: "Satoshi";
-    src: url('fonts/Satoshi-Italic.otf') format('OpenType');
-    font-weight: 600;
-    font-style: normal;
+    font-family: 'Satoshi-Italic';
+    src: url('../fonts/Satoshi-Italic.woff2') format('woff2'),
+         url('../fonts/Satoshi-Italic.woff') format('woff'),
+         url('../fonts/Satoshi-Italic.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: italic;
 }
 
 /* Satoshi Bold */
 @font-face {
-    font-family: "Satoshi";
-    src: url('fonts/Satoshi-Bold.otf') format('OpenType');
-    font-weight: bold;
-    font-style: normal;
+    font-family: 'Satoshi-Bold';
+    src: url('../fonts/Satoshi-Bold.woff2') format('woff2'),
+         url('../fonts/Satoshi-Bold.woff') format('woff'),
+         url('../fonts/Satoshi-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
 }
 
 /* GLOBAL STYLES */
@@ -34,7 +54,10 @@ body {
     font-size: 16px;
     background-color: #FFFDFA;
     color: #292828;
-    font-family: "Satoshi", "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+body p {
+    font-family: "Satoshi-Regular", "Open Sans", Helvetica, sans-serif;
 }
 
 button a, ul a {
@@ -42,13 +65,13 @@ button a, ul a {
     color: inherit;
 }
 
-ul, p, h1, h2, h3 {
+h1, h2, h3, ul, p {
     padding: 0;
     margin: 0;
 }
 
-h2#h2-alt {
-    color: #FF8533;
+h1, h2, h3, h4, b, strong {
+    font-family: "Satoshi-Bold", "Open Sans", Helvetica, sans-serif;
 }
 
 button.btn-filled {
@@ -67,6 +90,7 @@ button.btn-filled {
 }
 
 /* Color Palette */
+
 .color-text-primary { color: #03387C; }
 .color-text-primary-alt { color: #02214A; }
 .color-text-secondary { color: #FF6700; }
@@ -100,9 +124,6 @@ button.btn-filled {
 .padding-48-24 { padding: 48px 24px; }
 .padding-48-all { padding: 48px; }
 .padding-bottom { padding-bottom: 144px; }
-
-.sect-dark { background-color: #242424; }
-.background-white { background-color: white; }
 
 /* Flexbox */
 
@@ -170,6 +191,18 @@ button.btn-filled {
 
 /* Smartphone */
 @media screen and (max-width: 480px) {
+    /* Font Size */
+    /* h1 { font-size: 88px; }
+    h2 { font-size: 64px; }
+    h2.h2alt, h2#h2alt { font: 44px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; color: #FF8533; }
+    h3 { font-size: 32px; }
+    body, b, p, ul { font-size: 18px; }
+    li.nav-item { font-size: 16px; }
+    .body-lg { font: 24px "Satoshi-Medium", "Open Sans", Helvetica, sans-serif; }
+    .body-lg-bold { font: 24px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
+    button { font-size: 20px; }
+    button a b { font-size: 20px; } */
+
     /* hides content on mobile verison */
     .hidden-on-mobile { display: none; }
 }
@@ -179,12 +212,12 @@ button.btn-filled {
     /* Font Size */
     h1 { font-size: 88px; }
     h2 { font-size: 64px; }
-    h2.h2alt, h2#h2alt { font-size: 44px; }
+    h2.h2alt, h2#h2alt { font: 44px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; color: #FF8533; }
     h3 { font-size: 32px; }
-    li.nav-item { font-size: 16px; }
     body, b, p, ul { font-size: 18px; }
-    .body-lg { font-size: 24px; }
-    .body-lg-bold { font: bold 24px "Satoshi", sans-serif; }
+    li.nav-item { font-size: 16px; }
+    .body-lg { font: 24px "Satoshi-Medium", "Open Sans", Helvetica, sans-serif; }
+    .body-lg-bold { font: 24px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
     button { font-size: 20px; }
     button a b { font-size: 20px; }
 
@@ -198,13 +231,10 @@ button.btn-filled {
         height: 140px;
     }
 
-    #top-nav {
-        height: 140px;
-    }
-
     #top-nav li {
         display: inline;
         list-style-type: none;
+        font: 16px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif;
     }
 
     nav, #top-left-nav, #top-right-nav {
@@ -234,11 +264,14 @@ button.btn-filled {
     }
 
     .hero1-info {
-        /* padding: 30% 0 175px 80px; */
-        position: absolute;
         bottom: 175px;
         width: 954px;
-        height: auto;
+        position: relative;
+        top: 40%;
+        /* left: 50%; */
+        /* transform: translate(-50%, -50%); */
+        margin: 0;
+        text-align: left;
     }
 
     div#hero-info p {
@@ -307,14 +340,12 @@ button.btn-filled {
     }
 
     #our-vis-h2 {
-        color: #FF6700;
         width: 1111px;
         text-align: center; 
     }
 
     p#our-vis-p1 {
         /* margin: 40px 112px 0 112px; */
-        color: #FFFDFA;
         width: 1062px;
         text-align: center;
     }

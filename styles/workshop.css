@@ -10,6 +10,17 @@
          font-style: normal;
 }
 
+/* Satoshi Medium */
+@font-face {
+    font-family: 'Satoshi-Medium';
+    src: url('../fonts/Satoshi-Medium.woff2') format('woff2'),
+         url('../fonts/Satoshi-Medium.woff') format('woff'),
+         url('../fonts/Satoshi-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+}
+
 /* Satoshi Italic */
 @font-face {
     font-family: 'Satoshi-Italic';
@@ -210,6 +221,7 @@ button.btn-filled {
     #top-nav li {
         display: inline;
         list-style-type: none;
+        font: 18px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif;
     }
     
     nav, #top-left-nav, #top-right-nav {
