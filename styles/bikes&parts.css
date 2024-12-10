@@ -1,0 +1,228 @@
+/* Imported Custom Font */
+/* Satoshi Regular */
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
+         url('../fonts/Satoshi-Regular.woff') format('woff'),
+         url('../fonts/Satoshi-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+}
+
+/* Satoshi Italic */
+@font-face {
+    font-family: 'Satoshi-Italic';
+    src: url('../fonts/Satoshi-Italic.woff2') format('woff2'),
+         url('../fonts/Satoshi-Italic.woff') format('woff'),
+         url('../fonts/Satoshi-Italic.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: italic;
+}
+
+/* Satoshi Bold */
+@font-face {
+    font-family: 'Satoshi-Bold';
+    src: url('../fonts/Satoshi-Bold.woff2') format('woff2'),
+         url('../fonts/Satoshi-Bold.woff') format('woff'),
+         url('../fonts/Satoshi-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+}
+
+/* GLOBAL STYLES */
+
+.all-caps {
+    text-transform: uppercase;
+}
+
+body {
+    width: 100%;
+    font-size: 16px;
+    background-color: #FFFDFA;
+    color: #292828;
+    font-family: "Satoshi-Regular", "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+button a, ul a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, p, h1, h2, h3 {
+    padding: 0;
+    margin: 0;
+}
+
+h2#h2-alt {
+    color: #FF8533;
+}
+
+button.btn-filled {
+    width: 224px;
+    height: 48px;
+    padding: 16px 20px;
+    margin-top: 44px;
+    border-style: none;
+    border-radius: 16px;
+    color: #FFFDFA;
+    background-color: #FF6700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Color Palette */
+.color-text-primary { color: #03387C; }
+.color-text-primary-alt { color: #02214A; }
+.color-text-secondary { color: #FF6700; }
+.color-text-secondary-light { color: #FF8533; }
+.color-text-secondary-accent { color: #8F5833; }
+.color-text-accent-01 { color: #FFFDFA; }
+.color-text-accent-02 { color: #292828; }
+
+.color-bg-primary { background-color: #03387C; }
+.color-bg-primary-alt { background-color: #02214A; }
+.color-bg-secondary { background-color: #FF6700; }
+.color-bg-secondary-light { background-color: #FF8533; }
+.color-bg-secondary-accent { background-color: #8F5833; }
+.color-bg-accent-01 { background-color: #FFFDFA; }
+.color-bg-accent-02 { background-color: #292828; }
+
+/* Layout*/
+
+.margin-default { margin: 0 80px; }
+.margin-zero { margin: 0; }
+
+.padding-default { padding: 0 80px; }
+.padding-zero { padding: 0; }
+.padding-80 { padding: 80px 0; }
+.padding-80-all { padding: 80px; }
+.padding-40 { padding: 40px 0; }
+.padding-24 { padding: 24px 0px; }
+.padding-24-all { padding: 24px; }
+.padding-8 { padding: 8px 0; }
+.padding-16 { padding: 16px 0; }
+.padding-48-24 { padding: 48px 24px; }
+.padding-48-all { padding: 48px; }
+.padding-bottom { padding-bottom: 144px; }
+
+.sect-dark { background-color: #242424; }
+.background-white { background-color: white; }
+
+/* Flexbox */
+
+.flex-row {
+    display: flex;
+    flex-direction: row; /* default value already */
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.space-between-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.space-between-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.justify-content-right { justify-content: right; }
+.justify-content-center { justify-content: center; }
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-1 { flex: 1; }
+.flex-2 { flex: 2; }
+.flex-3 { flex: 3; }
+.flex-4 { flex: 4; }
+.flex-5 { flex: 5; }
+.flex-6 { flex: 6; }
+.flex-7 { flex: 7; }
+.flex-8 { flex: 8; }
+
+.gap-8 { gap: 8px; }
+.gap-12 { gap: 12px; }
+.gap-24 { gap: 24px; }
+.gap-32 { gap: 32px; }
+.gap-40 { gap: 40px; }
+.gap-48 { gap: 48px; }
+.gap-64 { gap: 64px; }
+.gap-104 { gap: 104px; }
+
+/* Grid */
+
+#top-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    white-space: nowrap;
+}
+
+/* Smartphone */
+@media screen and (max-width: 480px) {
+    /* hides content on mobile verison */
+    .hidden-on-mobile { display: none; }
+}
+
+/* Laptop & Desktop */
+@media screen and (min-width: 769px) {
+    /* Font Size */
+    h1 { font-size: 88px; }
+    h2 { font-size: 64px; }
+    h2.h2alt, h2#h2alt { font-size: 44px; }
+    h3 { font-size: 32px; }
+    li.nav-item { font-size: 16px; }
+    body, b, p, ul { font-size: 18px; }
+    .body-lg { font-size: 24px; }
+    .body-lg-bold { font: bold 24px "Satoshi", sans-serif; }
+    button { font-size: 20px; }
+    button a b { font-size: 20px; }
+
+    /* hides content on desktop verison */
+    .hidden-on-desktop { display: none; }
+
+    /* Header */
+
+    header {
+        background-color: #03387C;
+        height: 140px;
+    }
+
+    #top-nav li {
+        display: inline;
+        list-style-type: none;
+    }
+    
+    nav, #top-left-nav, #top-right-nav {
+        height: 140px;
+    }
+
+    #bike-edmonton-logo {
+        position: relative;
+        z-index: 2;
+        margin: auto;
+    }
+
+    #bike-edmonton-logo img {
+        width: 80px;
+    }
+}
