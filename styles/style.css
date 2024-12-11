@@ -372,7 +372,7 @@ button.btn-filled {
     #blog-story-01 {
         width: 193px;
         height: 177px;
-        object-fit: contain;
+        object-fit: cover;
     }
 
     #blog-story-02, #blog-story-03 {
@@ -448,6 +448,7 @@ button.btn-filled {
         color: #FF6700;
         background-color: #FFFDFA;
         border-radius: 16px;
+        border-style: none;
         font: 12px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif;
     }
 }

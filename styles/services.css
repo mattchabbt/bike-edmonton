@@ -281,6 +281,7 @@ button.btn-filled {
         color: #FF6700;
         background-color: #FFFDFA;
         border-radius: 16px;
+        border-style: none;
         font: 12px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif;
     }
 }
