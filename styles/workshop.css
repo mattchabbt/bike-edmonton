@@ -49,6 +49,11 @@
     text-transform: uppercase;
 }
 
+.text-decor-none { 
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
     width: 100%;
     font-size: 16px;
@@ -65,10 +70,6 @@ button a, ul a {
 ul, p, h1, h2, h3 {
     padding: 0;
     margin: 0;
-}
-
-h2#h2-alt {
-    color: #FF8533;
 }
 
 button.btn-filled {

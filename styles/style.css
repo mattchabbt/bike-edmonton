@@ -49,6 +49,11 @@
     text-transform: uppercase;
 }
 
+.text-decor-none { 
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
     width: 100%;
     font-size: 16px;
@@ -215,7 +220,7 @@ button.btn-filled {
     /* Font Size */
     h1 { font-size: 88px; }
     h2 { font-size: 64px; }
-    h2.h2alt, h2#h2alt { font: 44px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; color: #FF8533; }
+    h2.h2alt, h2#h2alt { font: 44px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
     h3 { font-size: 32px; }
     body, b, p, ul, li { font-size: 18px; }
     li.nav-item { font-size: 16px; }
@@ -399,7 +404,8 @@ button.btn-filled {
 
     #our-vis-h2 {
         width: 1111px;
-        text-align: center; 
+        text-align: center;
+        color: #FF8533;
     }
 
     p#our-vis-p1 {
