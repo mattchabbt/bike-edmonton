@@ -241,6 +241,18 @@ button.btn-filled {
         width: 80px;
     }
 
+    /* Page Navigation */
+
+    #page-nav {
+        padding: 20px 0;
+    }
+    
+    #page-nav li {
+        display: inline;
+        list-style-type: none;
+        font: 16px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif;
+    }
+
     /* Footer */
 
     #footer {
