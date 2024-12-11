@@ -31,8 +31,85 @@
         <!-- Mobile Navigation -->
     </header>
     <!-- Footer -->
-    <footer>
-        
+    <!-- Desktop Version -->    
+    <footer id="footer" class="padding-default hidden-on-mobile">    
+        <div id="footer-row" class="flex-row space-between-row">
+            <div id="footer-col1" class="flex-col gap-64">
+                <div>
+                    <p class="footer-list-header-col1 body-lg-bold">Bike Edmonton</p>
+                    <!-- Social Media Icons -->
+                    <div class="flex-row gap-16">
+                        <!-- Twitter/X -->
+                        <a href="#">
+                            <svg role="img" width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <title>Twitter/X Icon Link</title>
+                                <path d="M40 0C38.44 0.925942 35.31 2.18786 33.47 2.55184C33.416 2.56584 33.372 2.58384 33.32 2.59784C31.694 0.993937 29.466 0 27 0C22.03 0 18 4.02975 18 8.99944C18 9.26142 17.978 9.74339 18 9.99937C11.294 9.99937 6.19 6.48759 2.53 1.99988C2.132 2.99981 1.958 4.57971 1.958 6.06362C1.958 8.86545 4.148 11.6173 7.558 13.3232C6.93 13.4852 6.238 13.6012 5.518 13.6012C4.356 13.6012 3.126 13.2952 2 12.3672C2 12.4012 2 12.4332 2 12.4692C2 16.385 6.156 19.0508 9.852 19.7928C9.102 20.2347 7.59 20.2787 6.852 20.2787C6.332 20.2787 4.492 20.0407 4 19.9488C5.028 23.1586 8.736 24.9624 12.27 25.0264C9.506 27.1943 7.588 27.9983 1.928 27.9983H0C3.576 30.2901 8.13 32 12.694 32C27.554 32 36 20.6747 36 9.99937C36 9.82738 35.996 9.46741 35.99 9.10543C35.99 9.06943 36 9.03543 36 8.99944C36 8.94544 35.984 8.89344 35.984 8.83945C35.978 8.56746 35.972 8.31348 35.966 8.18149C37.546 7.04156 38.916 5.61965 40 3.99975C38.55 4.64371 36.994 5.07568 35.36 5.27167C37.028 4.27173 39.398 1.88788 40 0Z" fill="#FFFDFA"/>
+                                </svg>
+                        </a>
+                        <!-- FB -->
+                        <a href="#">
+                            <svg role="img" width="17" height="32" viewBox="0 0 17 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <title>Facebook Icon Link</title>
+                                <path d="M17 11.2001H11.3064V8.00008C11.3064 6.34888 11.4421 5.30888 13.831 5.30888H16.8482V0.220899C15.38 0.0704998 13.9037 -0.00309999 12.4257 9.99997e-05C8.0437 9.99997e-05 4.84561 2.65129 4.84561 7.51848V11.2001H0V17.6L4.84561 17.5984V32H11.3064V17.5952L16.2586 17.5936L17 11.2001Z" fill="#FFFDFA"/>
+                                </svg> 
+                        </a>
+                        <!-- Instagram -->
+                        <a href="#">
+                            <svg role="img" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <title>Instagram Icon Link</title>
+                                <path d="M8.88889 0C3.98044 0 0 3.98044 0 8.88889V23.1111C0 28.0196 3.98044 32 8.88889 32H23.1111C28.0196 32 32 28.0196 32 23.1111V8.88889C32 3.98044 28.0196 0 23.1111 0H8.88889ZM26.6667 3.55556C27.648 3.55556 28.4444 4.352 28.4444 5.33333C28.4444 6.31467 27.648 7.11111 26.6667 7.11111C25.6853 7.11111 24.8889 6.31467 24.8889 5.33333C24.8889 4.352 25.6853 3.55556 26.6667 3.55556ZM16 7.11111C20.9084 7.11111 24.8889 11.0916 24.8889 16C24.8889 20.9084 20.9084 24.8889 16 24.8889C11.0916 24.8889 7.11111 20.9084 7.11111 16C7.11111 11.0916 11.0916 7.11111 16 7.11111ZM16 10.6667C14.5855 10.6667 13.229 11.2286 12.2288 12.2288C11.2286 13.229 10.6667 14.5855 10.6667 16C10.6667 17.4145 11.2286 18.771 12.2288 19.7712C13.229 20.7714 14.5855 21.3333 16 21.3333C17.4145 21.3333 18.771 20.7714 19.7712 19.7712C20.7714 18.771 21.3333 17.4145 21.3333 16C21.3333 14.5855 20.7714 13.229 19.7712 12.2288C18.771 11.2286 17.4145 10.6667 16 10.6667Z" fill="#FFFDFA"/>
+                                </svg>                            
+                        </a>
+                        <!-- YouTube -->
+                        <a href="#">
+                            <svg role="img" width="38" height="30" viewBox="0 0 38 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <title>YouTube Icon Link</title>
+                                <path d="M37.2058 4.09875C36.7688 2.48625 35.4806 1.215 33.8466 0.78375C30.8826 3.91155e-07 19 0 19 0C19 0 7.1174 3.91155e-07 4.1534 0.78375C2.5194 1.215 1.2312 2.48625 0.7942 4.09875C-5.66244e-08 7.02375 0 15 0 15C0 15 -5.66244e-08 22.9762 0.7942 25.9012C1.2312 27.5137 2.5194 28.785 4.1534 29.2163C7.1174 30 19 30 19 30C19 30 30.8826 30 33.8466 29.2163C35.4825 28.785 36.7688 27.5137 37.2058 25.9012C38 22.9762 38 15 38 15C38 15 38 7.02375 37.2058 4.09875ZM15.2 21.495V8.505L26.6 15L15.2 21.495Z" fill="#FFFDFA"/>
+                                </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <p class="footer-list-header-col1 body-lg-bold">Address</p>
+                    <p class="color-text-accent-01">10612 105 Ave NW, Edmonton, AB T5H 0L2</p>
+                </div>
+                <div><button id="btn-alt"><a href="#" class="all-caps">Support Bike Edmonton</a></button></div>
+            </div>
+            <ul class="flex-col gap-16">
+                <li class="footer-list-header body-lg-bold">About Us</li>
+                <li>Vision | Mission | Objectives</li>
+                <li>History</li>
+                <li>Contact Us</li>
+                <li>Membership</li>
+                <li>Our Staff</li>
+                <li>Board & Governance</li>
+                <li>Funders & Sponsors</li>
+                <li>In The Media</li>
+                <li>Newsletter</li>
+                <li>Calendar</li>
+            </ul>
+            <ul class="flex-col gap-16">
+                <li class="footer-list-header body-lg-bold">Services</li>
+                <li>Facility Bookings</li>
+                <li>Lunch & Learn Presentation</li>
+                <li>Rent a Mechanic</li>
+                <li>Bike Generator Rental</li>
+                <li>Bike Rack Sales & Rentals</li>
+            </ul>
+            <ul class="flex-col gap-16">
+                <li class="footer-list-header body-lg-bold">Knowledge</li>
+                <li>Bike Registry & Stolen Bikes</li>
+                <li>Laws, Regulations, and Safety</li>
+                <li>Maps & Route Finder</li>
+                <li>Bikes on Transit</li>
+                <li>Weather in Edmonton</li>
+                <li>Bicycle Counts</li>
+                <li>Ghost Bikes</li>
+                <li>Voting</li>
+                <li>Library</li>
+            </ul>
+        </div>
     </footer>
+    <!-- Mobile Version -->
 </body>
 </html>
