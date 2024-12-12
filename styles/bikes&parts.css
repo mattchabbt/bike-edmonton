@@ -251,6 +251,13 @@ button.btn-filled {
     #bike-edmonton-logo img {
         width: 57px;
     }
+    
+    /* Page Navigation */
+
+    #page-nav {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
 }
 
 /* Laptop & Desktop */
