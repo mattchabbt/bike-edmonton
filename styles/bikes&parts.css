@@ -72,6 +72,28 @@ ul, p, h1, h2, h3 {
     margin: 0;
 }
 
+ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol li {
+    padding-left: 4px;
+    margin: 28px 0;
+}
+
+ol li:first-child {
+    margin-top: 24px;
+}
+
+li::marker {
+    font-family: "Satoshi-Bold", "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+p {
+    white-space: normal;
+}
+
 button.btn-filled {
     width: 224px;
     height: 48px;
@@ -144,6 +166,11 @@ button.btn-filled {
     align-items: center;
 }
 
+.space-around-row {
+    display: flex;
+    justify-content: space-around;
+}
+
 .space-between-row {
     display: flex;
     justify-content: space-between;
@@ -185,6 +212,8 @@ button.btn-filled {
 .gap-56 { gap: 56px; }
 .gap-64 { gap: 64px; }
 .gap-104 { gap: 104px; }
+.gap-128 { gap: 128px; }
+.gap-148 { gap: 148px; }
 
 /* Grid */
 
@@ -207,7 +236,7 @@ button.btn-filled {
     h2 { font-size: 64px; }
     h2.h2alt, h2#h2alt { font: 44px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
     h3 { font-size: 32px; }
-    body, b, p, ul { font-size: 18px; }
+    body, b, p, ul, ol { font-size: 18px; }
     li.nav-item { font-size: 16px; }
     .body-lg { font: 24px "Satoshi-Medium", "Open Sans", Helvetica, sans-serif; }
     .body-lg-bold { font: 24px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
@@ -293,9 +322,14 @@ button.btn-filled {
         margin: 0 auto 136px; */
     }
 
-    #shop-card-01, #shop-card-02, #shop-card-03, #shop-card-04, #shop-card-05 { border-radius: 16px; }
+    #shop-card-01, #shop-card-02, #shop-card-03, #shop-card-04, #shop-card-05 { 
+        border-radius: 16px;
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.32);
+    }
     
-    #shop-card-01 { background: url(../images/image\ 9.jpg) center / cover no-repeat; }
+    #shop-card-01 { 
+        background: url(../images/image\ 9.jpg) center / cover no-repeat;
+    }
     
     #shop-card-02 {
         background-image: url(../images/image\ 11.jpg);
@@ -369,7 +403,38 @@ button.btn-filled {
 
     /* Refurbished Bikes & Steps to Buy a Bike */
 
-    
+    #refurb-and-steps {
+        padding: 160px 80px;
+        width: 1280px;
+        margin: 0 auto;
+    }
+
+    #refurb-bikes, #steps-to-buy-bikes {
+        width: 1280px;
+    }
+
+    #refurb-img, #steps-to-buy-img {
+        width: 628px;
+        height: 521px;
+    }
+
+    #refurb-info {
+        width: 519px;
+        /* padding-left: 120px; */
+    }
+
+    #refurb-info p   {
+        margin: 16px 0 40px;
+    }
+
+    #steps-to-buy-info {
+        width: 519px;
+        /* padding-right: 120px; */
+    }
+
+    #btn-read-more {
+        margin-top: 40px;
+    }
 
     /* Footer */
 
