@@ -72,6 +72,10 @@ ul, p, h1, h2, h3 {
     margin: 0;
 }
 
+button {
+    cursor: pointer;
+}
+
 button.btn-filled {
     width: 224px;
     height: 48px;
@@ -255,6 +259,19 @@ button.btn-filled {
         display: inline;
         list-style-type: none;
         font: 16px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif;
+    }
+
+    /* Page Breadcrumbs */
+
+    #page-breadcrumbs {
+        padding-top: 96px;
+        padding-bottom: 60px;
+        font: 24px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif;
+    }
+
+    #page-breadcrumbs a {
+        color: inherit;
+        text-decoration: none;
     }
 
     /* Footer */

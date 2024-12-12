@@ -94,6 +94,10 @@ p {
     white-space: normal;
 }
 
+button {
+    cursor: pointer;
+}
+
 button.btn-filled {
     width: 224px;
     height: 48px;

@@ -72,6 +72,10 @@ ul, p, h1, h2, h3 {
     margin: 0;
 }
 
+button {
+    cursor: pointer;
+}
+
 button.btn-filled {
     width: 224px;
     height: 48px;

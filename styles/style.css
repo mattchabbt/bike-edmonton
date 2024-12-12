@@ -79,6 +79,10 @@ h1, h2, h3, h4, b, strong {
     font-family: "Satoshi-Bold", "Open Sans", Helvetica, sans-serif;
 }
 
+button {
+    cursor: pointer;
+}
+
 button.btn-filled {
     width: 224px;
     height: 48px;
