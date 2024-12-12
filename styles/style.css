@@ -116,12 +116,10 @@ button.btn-filled {
 .color-bg-accent-01 { background-color: #FFFDFA; }
 .color-bg-accent-02 { background-color: #292828; }
 
-/* Layout*/
+/* Layout */
 
-.margin-default { margin: 0 80px; }
 .margin-zero { margin: 0; }
 
-.padding-default { padding: 0 80px; }
 .padding-zero { padding: 0; }
 .padding-80 { padding: 80px 0; }
 .padding-80-all { padding: 80px; }
@@ -241,6 +239,11 @@ button.btn-filled {
 
     /* hides content on desktop verison */
     .hidden-on-desktop { display: none; }
+
+    /* Layout*/
+
+    .margin-default { margin: 0 80px; }
+    .padding-default { padding: 0 80px; }
 
     /* Header */
 
@@ -397,6 +400,7 @@ button.btn-filled {
     }
 
     .blog-story-title {
+        width: 300px;
         margin-top: 24px;
         margin-bottom: 32px;
     }
