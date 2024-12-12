@@ -15,7 +15,7 @@
     <header id="header" class="padding-default">
         <!-- Desktop Nav -->
         <nav id="top-nav" class="hidden-on-mobile color-bg-primary">
-            <ul id="top-left-nav" class="flex-row align-center gap-64 color-text-accent-01">
+            <ul id="top-left-nav" class="hidden-on-mobile flex-row align-center gap-64 color-text-accent-01">
                 <li class="all-caps"><a href="bikes&parts.html" id="nav-label-bikes&parts">Bikes & Parts</a></li>
                 <li class="all-caps color-text-secondary"><a href="workshop.html" id="nav-label-workshop">Workshop</a></li>
                 <li class="all-caps"><a href="services.html" id="nav-label-services">Services</a></li>
@@ -23,7 +23,7 @@
             <div id="bike-edmonton-logo" class="flex-row-center hidden-on-mobile padding-16">
                 <a href="index.html"><img src="images/Bike-edmonton-logo.png" alt="Bike Edmonton Logo"></a>
             </div>
-            <ul id="top-right-nav" class="flex-row align-center gap-64 justify-content-right color-text-accent-01">
+            <ul id="top-right-nav" class="hidden-on-mobile flex-row align-center gap-64 justify-content-right color-text-accent-01">
                 <li class="all-caps"><a href="#" id="nav-label-blog">Blog</a></li>
                 <li class="all-caps"><a href="#" id="nav-label-contact">Contact Us</a></li>
             </ul>
@@ -31,18 +31,20 @@
         <!-- Mobile Navigation -->
     </header>
     <!-- Page Navigation -->
-    <div>
-        <ul id="page-nav" class="flex-row justify-content-center gap-40 color-text-accent-01 color-bg-primary-alt">
-            <li><a href="#">Repair Appointments</a></li>
-            <li><a href="#">Hours & Location</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Volunteer</a></li>
-            <li><a href="#">FAQs</a></li>
-        </ul>
-    </div>
+    <section>
+        <div class="hidden-on-mobile">
+            <ul id="page-nav" class="flex-row justify-content-center gap-40 color-text-accent-01 color-bg-primary-alt">
+                <li><a href="#">Repair Appointments</a></li>
+                <li><a href="#">Hours & Location</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Volunteer</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+    </section>
     <!-- Breadcrumbs -->
     <section class="hidden-on-mobile">
-        <p id="page-breadcrumbs" class="padding-default color-text-secondary"><a href="index.html">Home</a> / <a href="#">Workshop</a></p>
+        <p id="page-breadcrumbs" class="padding-default color-text-secondary"><a href="index.html">Home</a> / <a>Workshop</a></p>
     </section>
     <!-- Page Title & Subtitle -->
     <section class="padding-default">
@@ -60,7 +62,7 @@
     <!-- Main Information -->
     <section>
         <!-- Desktop Version -->
-        <div id="main-info" class="flex-col gap-128 padding-default">
+        <div id="main-info" class="hidden-on-mobile flex-col gap-128 padding-default">
             <div id="main-info-row1" class="flex-1 flex-row space-between-row">
                 <div id="main-info-01" class="text-align-center">
                     <h2 id="h2alt" class="color-text-secondary">New At This?</h2>
@@ -109,7 +111,7 @@
     <!-- General Info -->
     <section class="sect-dark">
         <!-- Desktop Version -->
-        <div class="grid-general-info padding-default color-text-accent-01">
+        <div class="hidden-on-mobile grid-general-info padding-default color-text-accent-01">
             <div id="general-info-title">
                 <h2 id="h2alt">General Info</h2>
             </div>
@@ -148,12 +150,12 @@
             </div>
         </div>
         <!-- Mobile Version -->
-         
+
     </section>
     <!-- Videos -->
     <section>
         <!-- Desktop Version -->
-        <div id="videos-workshop" class="padding-default">
+        <div id="videos-workshop" class="hidden-on-mobile padding-default">
             <h2 id="videos-workshop-h2" class="text-align-center">See More About Our Workshop!</h2>
             <div class="flex-row gap-24">
                 <div>
@@ -232,7 +234,7 @@
                 <li><a href="#" class="text-decor-none">Calendar</a></li>
             </ul>
             <ul class="flex-col gap-16">
-                <li class="footer-list-header body-lg-bold"><a href="#" class="text-decor-none">Services</a></li>
+                <li class="footer-list-header body-lg-bold"><a href="services.html" class="text-decor-none">Services</a></li>
                 <li><a href="#" class="text-decor-none">Facility Bookings</a></li>
                 <li><a href="#" class="text-decor-none">Lunch & Learn Presentation</a></li>
                 <li><a href="#" class="text-decor-none">Rent a Mechanic</a></li>
