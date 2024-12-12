@@ -172,6 +172,9 @@ button.btn-filled {
     align-items: center;
 }
 
+.text-align-center { text-align: center; }
+.text-align-left { text-align: left; }
+
 .flex-1 { flex: 1; }
 .flex-2 { flex: 2; }
 .flex-3 { flex: 3; }
@@ -222,16 +225,19 @@ button.btn-filled {
 /* Laptop & Desktop */
 @media screen and (min-width: 769px) {
     /* Font Size */
-    h1 { font-size: 88px; }
-    h2 { font-size: 64px; }
-    h2.h2alt, h2#h2alt { font: 44px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
-    h3 { font-size: 32px; }
-    body, b, p, ul, li { font-size: 18px; }
-    li.nav-item { font-size: 16px; }
-    .body-lg { font: 24px "Satoshi-Medium", "Open Sans", Helvetica, sans-serif; }
-    .body-lg-bold { font: 24px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
-    button { font-size: 20px; }
-    button a b { font-size: 20px; }
+    h1 { font-size: 88px; line-height: normal; }
+    h2 { font-size: 64px; line-height: normal; }
+    h2.h2alt, h2#h2alt { font: 44px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
+    h3 { font-size: 32px; line-height: normal; }
+    body, b, p, ul, li { font-size: 18px; line-height: normal; }
+    li.nav-item { font-size: 16px; line-height: normal; }
+    .body-lg { font: 24px/normal "Satoshi-Medium", "Open Sans", Helvetica, sans-serif; }
+    .body-lg-bold { font: 24px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
+    button { font-size: 20px; line-height: normal; }
+    button a b { font-size: 20px; line-height: normal; }
+    em { font: 32px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
+    .img-cap { font: 24px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
+    b { font: 18px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
 
     /* hides content on desktop verison */
     .hidden-on-desktop { display: none; }
