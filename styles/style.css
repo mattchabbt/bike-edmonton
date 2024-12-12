@@ -194,30 +194,39 @@ button.btn-filled {
 .gap-64 { gap: 64px; }
 .gap-104 { gap: 104px; }
 
-/* Grid */
-
-#top-nav {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    white-space: nowrap;
-}
-
 /* Smartphone */
 @media screen and (max-width: 480px) {
     /* Font Size */
-    /* h1 { font-size: 88px; }
-    h2 { font-size: 64px; }
-    h2.h2alt, h2#h2alt { font: 44px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; color: #FF8533; }
-    h3 { font-size: 32px; }
-    body, b, p, ul { font-size: 18px; }
-    li.nav-item { font-size: 16px; }
-    .body-lg { font: 24px "Satoshi-Medium", "Open Sans", Helvetica, sans-serif; }
-    .body-lg-bold { font: 24px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
-    button { font-size: 20px; }
-    button a b { font-size: 20px; } */
+    h1 { font: 40px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
+    h2 { font: 28px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
+    h2.h2alt, h2#h2alt { font: 24px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
+    body, b, p, ul, li { font: 16px/normal "Satoshi-Medium", "Open Sans", Helvetica, sans-serif; }
+    li.nav-item { font-size: 16px; line-height: normal; }
+    .body-lg { font: 24px/normal "Satoshi-Medium", "Open Sans", Helvetica, sans-serif; }
+    .body-lg-bold { font: 24px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
+    /* button { font-size: 20px; line-height: normal; } */
+    /* button a b { font-size: 20px; line-height: normal; } */
+    /* em { font: 32px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; } */
+    /* .img-cap { font: 24px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; } */
+    /* b { font: 18px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; } */
 
     /* hides content on mobile verison */
     .hidden-on-mobile { display: none; }
+
+    /* Layout*/
+
+    .margin-default { margin: 0 24px; }
+    .padding-default { padding: 0 24px; }
+
+    /* Grid */
+    
+    #top-nav {
+        height: 98px;
+    }
+
+    #bike-edmonton-logo img {
+        width: 57px;
+    }
 }
 
 /* Laptop & Desktop */
@@ -244,6 +253,14 @@ button.btn-filled {
 
     .margin-default { margin: 0 80px; }
     .padding-default { padding: 0 80px; }
+
+    /* Grid */
+
+    #top-nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        white-space: nowrap;
+    }
 
     /* Header */
 

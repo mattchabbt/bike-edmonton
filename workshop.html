@@ -12,9 +12,9 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <header id="header" class="padding-default">
+    <header id="header">
         <!-- Desktop Nav -->
-        <nav id="top-nav" class="hidden-on-mobile color-bg-primary">
+        <nav id="top-nav" class="hidden-on-mobile padding-default color-bg-primary">
             <ul id="top-left-nav" class="hidden-on-mobile flex-row align-center gap-64 color-text-accent-01">
                 <li class="all-caps"><a href="bikes&parts.html" id="nav-label-bikes&parts">Bikes & Parts</a></li>
                 <li class="all-caps color-text-secondary"><a href="workshop.html" id="nav-label-workshop">Workshop</a></li>
@@ -29,6 +29,23 @@
             </ul>
         </nav>
         <!-- Mobile Navigation -->
+        <nav class="hidden-on-desktop padding-default color-bg-primary">
+            <div id="top-nav" class="align-center space-between-row">
+                <div id="bike-edmonton-logo" class="flex-row-center hidden-on-desktop">
+                    <a href="index.html"><img src="images/Bike-edmonton-logo.png" alt="Bike Edmonton Logo"></a>
+                </div>
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden-on-desktop">
+                    <g clip-path="url(#clip0_2020_132)">
+                    <path d="M5 30H35V26.6667H5V30ZM5 21.6667H35V18.3333H5V21.6667ZM5 10V13.3333H35V10H5Z" fill="#FFFDFA"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_2020_132">
+                    <rect width="40" height="40" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>                
+            </div>             
+        </nav>
     </header>
     <!-- Page Navigation -->
     <section>
