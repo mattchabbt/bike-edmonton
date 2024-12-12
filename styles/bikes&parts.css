@@ -163,6 +163,8 @@ button.btn-filled {
     align-items: center;
 }
 
+.text-align-center { text-align: center; }
+
 .flex-1 { flex: 1; }
 .flex-2 { flex: 2; }
 .flex-3 { flex: 3; }
@@ -203,7 +205,7 @@ button.btn-filled {
     /* Font Size */
     h1 { font-size: 88px; }
     h2 { font-size: 64px; }
-    h2.h2alt, h2#h2alt { font: 44px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; color: #FF8533; }
+    h2.h2alt, h2#h2alt { font: 44px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
     h3 { font-size: 32px; }
     body, b, p, ul { font-size: 18px; }
     li.nav-item { font-size: 16px; }
@@ -211,6 +213,8 @@ button.btn-filled {
     .body-lg-bold { font: 24px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
     button { font-size: 20px; }
     button a b { font-size: 20px; }
+    em { font: 32px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
+    .img-cap { font: 24px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; color: #FF6700; }
 
     /* hides content on desktop verison */
     .hidden-on-desktop { display: none; }
@@ -254,10 +258,123 @@ button.btn-filled {
         font: 16px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif;
     }
 
+    /* Page Breadcrumbs */
+
+    #page-breadcrumbs {
+        padding-top: 96px;
+        padding-bottom: 60px;
+        font: 24px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif;
+    }
+
+    #page-breadcrumbs a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    /* Page Title & Subtitle */
+
+    #page-title-subtitle {
+        margin-bottom: 152px;
+    }
+
+    #page-subtitle {
+        display: inline-block;
+        width: 828px;
+        padding-top: 36px;
+    }
+
+    /* Bike Shop Pages */
+    
+    #shop-card-row {
+        height: 480px;
+        padding: 0 48px;
+        margin-bottom: 136px;
+        /* width: 1347px;
+        margin: 0 auto 136px; */
+    }
+
+    #shop-card-01, #shop-card-02, #shop-card-03, #shop-card-04, #shop-card-05 { border-radius: 16px; }
+    
+    #shop-card-01 { background: url(../images/image\ 9.jpg) center / cover no-repeat; }
+    
+    #shop-card-02 {
+        background-image: url(../images/image\ 11.jpg);
+        background-position: bottom 64% left 60%;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    
+    #shop-card-03 {
+        background-image: url(../images/image\ 10.jpg);
+        background-position: bottom 0% left 44%;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    
+    #shop-card-04 {
+        background-image: url(../images/image\ 12.jpg);
+        background-position: 70% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #shop-card-05 {
+        background-image: url(../images/image\ 13.jpg);
+        background-position: 70% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .overlay-black {
+        background-color: rgba(0, 0, 0, 0.40);
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+    }
+    
+    #shop-card-01-info, #shop-card-02-info, #shop-card-03-info, #shop-card-04-info, #shop-card-05-info {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #shop-card-01-info h2, #shop-card-01-info p,
+    #shop-card-02-info h2, #shop-card-02-info p,
+    #shop-card-03-info h2, #shop-card-03-info p,
+    #shop-card-04-info h2, #shop-card-04-info p,
+    #shop-card-05-info h2, #shop-card-05-info p {
+        width: 231px;
+        text-align: left;
+        margin-left: 16px;
+        margin-right: auto; 
+    }
+
+    .img-cap { padding-top: 16px; }
+
+    /* Note for As-Is Bikes */
+
+    #as-is { 
+        padding-top: 68px;
+        padding-bottom: 68px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #as-is-info {
+        width: 1280px;
+        text-align: center;
+    }
+
+    /* Refurbished Bikes & Steps to Buy a Bike */
+
+    
+
     /* Footer */
 
     #footer {
-        background-color: #02214A;
+        background-color: #02214A;  
         padding-top: 80px;
         padding-bottom: 120px;
     }

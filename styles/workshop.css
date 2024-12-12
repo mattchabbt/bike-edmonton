@@ -163,6 +163,8 @@ button.btn-filled {
     align-items: center;
 }
 
+.text-align-center { text-align: center; }
+
 .flex-1 { flex: 1; }
 .flex-2 { flex: 2; }
 .flex-3 { flex: 3; }
@@ -211,6 +213,7 @@ button.btn-filled {
     .body-lg-bold { font: 24px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
     button { font-size: 20px; }
     button a b { font-size: 20px; }
+    em { font: 32px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
 
     /* hides content on desktop verison */
     .hidden-on-desktop { display: none; }
