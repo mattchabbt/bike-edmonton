@@ -54,6 +54,8 @@
     color: inherit;
 }
 
+html { width: 393px; }
+
 body {
     width: 100%;
     font-size: 16px;
