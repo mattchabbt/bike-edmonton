@@ -59,7 +59,6 @@ body {
     font-size: 16px;
     background-color: #FFFDFA;
     color: #292828;
-    font-family: "Satoshi-Regular", "Open Sans", Helvetica, sans-serif;
 }
 
 button a, ul a {
@@ -228,6 +227,50 @@ button.btn-filled {
     #page-nav {
         padding-top: 16px;
         padding-bottom: 16px;
+    }
+
+    /* Footer */
+
+    #footer {
+        background-color: #02214A;
+        padding-top: 80px;
+        padding-bottom: 120px;
+    }
+
+    #footer-col1, #footer-row ul { width: 302px; }
+
+    #footer-row ul {
+        /* display: inline; */
+        list-style-type: none;
+        color: #FFFDFA;
+        font: 16px "Satoshi-Regular", "Open Sans", Helvetica, sans-serif;
+    }
+
+    .footer-list-header, .footer-list-header-col1 {
+        color: #FF8533;
+    }
+
+    .footer-list-header {
+        margin-bottom: 2px;
+    }
+
+    .footer-list-header-col1 {
+        margin-bottom: 18px;
+    }
+
+    #btn-alt {
+        display: flex;
+        width: 345px;
+        height: 44px;
+        padding: 16px 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #FF6700;
+        background-color: #FFFDFA;
+        border-radius: 16px;
+        border-style: none;
+        font: 12px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif;
     }
 }
 
