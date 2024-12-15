@@ -54,8 +54,6 @@
     color: inherit;
 }
 
-html { width: 393px; }
-
 body {
     width: 100%;
     font-size: 16px;
@@ -192,6 +190,8 @@ button.btn-filled {
 
 /* Smartphone */
 @media screen and (max-width: 480px) {
+    html { width: 393px; }
+    
     /* Font Size */
     h1 { font: 40px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
     h2 { font: 28px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
