@@ -231,6 +231,67 @@ button.btn-filled {
         padding-bottom: 16px;
     }
 
+    /* Page Title & Subtitle */
+
+    #page-title-subtitle {
+        margin-top: 72px;
+        margin-bottom: 104px;
+    }
+
+    #page-subtitle {
+        display: inline-block;
+        width: 343px;
+        padding-top: 24px;
+    }
+
+    /* Service Options */
+
+    .blur-filter {
+        background-color: rgba(0, 0, 0, 0.64);
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(4px);
+    }
+
+    #service-opt-01 {
+        background: url(../images/20200701_155957_MjA3OD.jpg) center / cover no-repeat;
+    }
+
+    #service-opt-02 {
+        background: url(../images/image\ 15.jpg) right / cover no-repeat;
+    }
+    
+    #service-opt-03 {
+        background-image: url(../images/IMG_1465.jpg);
+        background-position: 25% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #service-opt-04 {
+        background: url(../images/image\ 17.jpg) center / cover no-repeat;
+    }
+
+    #service-opt-05 {
+        background: url(../images/image\ 18.jpg) center / cover no-repeat;
+    }
+
+    #service-opt-01-info, #service-opt-02-info, #service-opt-03-info, #service-opt-04-info, #service-opt-05-info {
+        gap: 40px;
+        height: 393px;
+        width: 393px;
+    }
+
+    #service-opt-01-info h2, #service-opt-01-info p,
+    #service-opt-02-info h2, #service-opt-02-info p,
+    #service-opt-03-info h2, #service-opt-03-info p,
+    #service-opt-04-info h2, #service-opt-04-info p,
+    #service-opt-05-info h2, #service-opt-05-info p, #service-opt-05-info b { 
+        width: 342px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
     /* Footer */
 
     #footer {
