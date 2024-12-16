@@ -79,9 +79,9 @@
             <em id="page-subtitle">Whether it's refurbished bikes, as-is or just the parts, there's something for everyone</em>
         </div>
         <!-- Mobile Version -->
-        <div class="hidden-on-desktop text-align-left">
+        <div id="page-title-subtitle" class="hidden-on-desktop text-align-center">
             <h1 id="page-title">Buy Bikes & Parts</h1>
-            <em id="page-subtitle">Whether it's refurbished bikes, as-is or just the parts, there's something for everyone</em>
+            <b id="page-subtitle">Whether it's refurbished bikes, as-is or just the parts, there's something for everyone</b>
         </div>
     </section>
     <!-- Bike Shop Pages -->
@@ -133,21 +133,85 @@
             </div>
         </div>
         <!-- Mobile Version -->
-
+        <div class="hidden-on-desktop ">
+            <div id="shop-card-row1" class="flex-row gap-16">
+                <!-- Row 1 -->
+                <div id="shop-card-01" class="flex-1">
+                    <div class="overlay-black">
+                        <a href="#" id="shop-card-01-info" class="text-decor-none flex-col justify-content-center gap-8">
+                            <b class="img-cap all-caps color-text-secondary">Shop</b>
+                            <h2 id="h2alt" class="color-text-accent-01">Youth Bikes</h2>
+                        </a>
+                    </div>
+                </div>
+                <div id="shop-card-02" class="flex-1">
+                    <div class="overlay-black">
+                        <a href="#" id="shop-card-02-info" class="text-decor-none flex-col justify-content-center gap-8">
+                            <b class="img-cap all-caps color-text-secondary">Shop</b>
+                            <h2 id="h2alt" class="color-text-accent-01">Small Adult Bikes</h2>
+                            <p class="color-text-accent-01">5'8" and Below</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="shop-card-row2" class="flex-row gap-16">
+                <div id="shop-card-03" class="flex-1">
+                    <div class="overlay-black">
+                        <a href="#" id="shop-card-03-info" class="text-decor-none flex-col justify-content-center gap-8">
+                            <b class="img-cap all-caps color-text-secondary">Shop</b>
+                            <h2 id="h2alt" class="color-text-accent-01">Medium Adult Bikes</h2>
+                            <p class="color-text-accent-01">5'3" to 6'</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="shop-card-04" class="flex-1">
+                    <div class="overlay-black"> 
+                        <a href="#" id="shop-card-04-info" class="text-decor-none flex-col justify-content-center gap-8">
+                            <b class="img-cap all-caps color-text-secondary">Shop</b>
+                            <h2 id="h2alt" class="color-text-accent-01">Large Adult Bikes</h2>
+                            <p class="color-text-accent-01">5'9" and Above</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="shop-card-row3" class="flex-row gap-16">
+                <div id="shop-card-05" class="flex-1">
+                    <div class="overlay-black">
+                        <a href="#" id="shop-card-05-info" class="text-decor-none flex-col justify-content-center gap-8">
+                            <b class="img-cap all-caps color-text-secondary">Shop</b>
+                            <h2 id="h2alt" class="color-text-accent-01">As-Is Bikes</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- A note for As-Is Bikes -->
     <section>
         <!-- Desktop Version -->
-        <div id="as-is" class="hidden-on-mobile padding-default color-bg-secondary color-text-accent-01">
-            <div id="as-is-info" class=" flex-col gap-16 align-center">
-                <h2 id="as-is-h2" class="h2alt">A Note for As-Is Bikes</h2>
-                <p id="as-is-p1" class="margin-zero body-lg">
-                    We have a limited number of <u>as-is bikes</u> (not refurbished) available at our workshop. 
-                    These bikes may not be ready-to-ride and they may be missing parts. Only bikes explicitly marked as-is are available for sale.
-                </p>
+        <div class="hidden-on-mobile">
+            <div id="as-is" class="padding-default color-bg-secondary color-text-accent-01">
+                <div id="as-is-info" class=" flex-col gap-16 align-center">
+                    <h2 id="as-is-h2" class="h2alt">A Note for As-Is Bikes</h2>
+                    <p id="as-is-p1" class="margin-zero body-lg">
+                        We have a limited number of <u>as-is bikes</u> (not refurbished) available at our workshop. 
+                        These bikes may not be ready-to-ride and they may be missing parts. Only bikes explicitly marked as-is are available for sale.
+                    </p>
+                </div>
             </div>
         </div>
         <!-- Mobile Version -->
+        <div class="hidden-on-desktop"> 
+            <div id="as-is" class="padding-default color-bg-secondary color-text-accent-01">
+                <div id="as-is-info" class=" flex-col gap-40 text-align-left">
+                    <h2 id="as-is-h2" class="h2alt">A Note for As-Is Bikes</h2>
+                    <b id="as-is-b1" class="margin-zero">
+                        We have a limited number of <u>as-is bikes</u> (not refurbished) available at our workshop. 
+                        These bikes may not be ready-to-ride and they may be missing parts. Only bikes explicitly marked as-is are available for sale.
+                    </b>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Refurbished Bikes & Steps to Buy a Bike -->
     <section>
@@ -192,6 +256,43 @@
             </div>
         </div>
         <!-- Mobile Version -->
+        <div id="refurb-and-steps" class="hidden-on-desktop flex-col gap-64 padding-default">
+            <!-- Refurbished Bikes -->
+            <div id="refurb-bikes" class="flex-1 flex-col">
+                <a href="#">
+                    <img src="images/DSC_2869+-+filled+bike+hanger.jpg" alt="Refurbished Bikes" id="refurb-img">
+                </a>
+                <div id="refurb-info">
+                    <h2 class="color-text-secondary">Refurbished Bikes</h2>
+                    <p>Bikes are like shoes: you can guess fit by size, but you should always try them out!</p>
+                    <button id="btn-donate-now" class="btn-filled all-caps"><b>Donate Now</b></button>
+                </div>
+            </div>
+            <!-- Steps to Buy a Bike -->
+            <div id="steps-to-buy-bikes" class="flex-1 flex-col">
+                <a href="#"><img src="images/image.jpg" alt="Refurbished Bikes" id="steps-to-buy-img"></a>
+                <div id="steps-to-buy-info">
+                    <h2 class="color-text-secondary text-decor-none">Steps to Buy a Bike</h2>
+                    <ol>
+                        <li>
+                            <p><b>View our bikes then book an appointment via “Book Appointment” button.</b> Be sure to tell us which bikes you’re interested in!</p>
+                        </li>
+                        <li>
+                            <p><b>Select your top 3 bikes to test ride. </b>Note the make, model, size, and colour. You may try additional bikes time permitting.</p>
+                        </li>
+                        <li>
+                            <p><b>Only one rider may be fitted per appointment. </b>Test rides are outside so please prepare accordingly.</p>
+                        </li>
+                        <li>
+                            <p><b>Please cancel your appointment if you cannot make it. </b>No-shows without cancellation receive lower priority and may be charged a booking fee on future appointments.</p>
+                        </li>
+                        <li>
+                            <p><b>The intended rider must be present for bike fitting.</b></p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
 
     </section>
     <!-- Book an Appointment -->
@@ -208,7 +309,16 @@
             </div>
         </div>
         <!-- Mobile Version -->
-         
+        <div id="book-appointment" class="hidden-on-desktop">
+            <div class="blur-filter">
+                <div id="book-appointment-info" class="padding-default text-align-left color-text-accent-01">
+                    <h2>Book an Appointment</h2>
+                    <p id="book-appointment-p1">To book an appointment, <a href="#" class="text-decor-none"><u>view our bikes</u></a> first and then use the “Book an Appointment” button.</p>
+                    <p id="book-appointment-p2">We do bike shopping appointments Tuesday and Thursday evenings and weekend afternoons.</p>
+                    <p id="book-appointment-p3">Available bike shopping appointments appear no more than 48 hours before those times.</p>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Footer -->
     <!-- Desktop Version -->    

@@ -98,7 +98,7 @@ button {
 }
 
 button.btn-filled {
-    width: 224px;
+    width: 100%;
     height: 48px;
     padding: 16px 20px;
     margin-top: 44px;
@@ -233,7 +233,7 @@ button.btn-filled {
     /* button a b { font-size: 20px; line-height: normal; } */
     /* em { font: 32px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; } */
     /* .img-cap { font: 24px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; } */
-    /* b { font: 18px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; } */
+    b { font: 16px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
 
     /* hides content on mobile verison */
     .hidden-on-mobile { display: none; }
@@ -258,6 +258,161 @@ button.btn-filled {
     #page-nav {
         padding-top: 16px;
         padding-bottom: 16px;
+    }
+
+    /* Page Title & Subtitle */
+
+    #page-title-subtitle {
+        margin-top: 72px;
+        margin-bottom: 104px;
+    }
+
+    #page-subtitle {
+        display: inline-block;
+        width: 345px;
+        padding-top: 24px;
+    }
+
+    /* Bike Shop Pages */
+    
+    #shop-card-row1, #shop-card-row2, #shop-card-row3 {
+        height: 297px;
+        padding: 0 24px;
+        margin-bottom: 16px;
+        /* width: 1347px;
+        margin: 0 auto 136px; */
+    }
+
+    #shop-card-01, #shop-card-02, #shop-card-03, #shop-card-04, #shop-card-05 { 
+        border-radius: 16px;
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.32);
+    }
+    
+    #shop-card-01 { 
+        background: url(../images/image\ 9.jpg) center / cover no-repeat;
+    }
+    
+    #shop-card-02 {
+        background-image: url(../images/image\ 11.jpg);
+        background-position: top 40% left 55%;
+        background-size: 137% auto;
+        background-repeat: no-repeat;
+    }
+    
+    #shop-card-03 {
+        background-image: url(../images/image\ 10.jpg);
+        background-position: bottom 20% left 44%;
+        background-size: 400% auto;
+        background-repeat: no-repeat;
+    }
+    
+    #shop-card-04 {
+        background-image: url(../images/image\ 12.jpg);
+        background-position: top 70% left 60%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #shop-card-05 {
+        background-image: url(../images/image\ 13.jpg);
+        background-position: top 70% left 50%;
+        background-size: 180% auto;
+        background-repeat: no-repeat;
+    }
+
+    .overlay-black {
+        background-color: rgba(0, 0, 0, 0.40);
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+    }
+    
+    #shop-card-01-info, #shop-card-02-info, #shop-card-03-info, #shop-card-04-info, #shop-card-05-info {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #shop-card-01-info h2, #shop-card-01-info p, #shop-card-01-info b,
+    #shop-card-02-info h2, #shop-card-02-info p, #shop-card-02-info b,
+    #shop-card-03-info h2, #shop-card-03-info p, #shop-card-03-info b,
+    #shop-card-04-info h2, #shop-card-04-info p, #shop-card-04-info b,
+    #shop-card-05-info h2, #shop-card-05-info p, #shop-card-05-info b {
+        width: 137px;
+        text-align: left;
+        margin-left: 16px;
+        margin-right: auto; 
+    }
+
+    .img-cap { padding-top: 16px; }
+
+    /* Note for As-Is Bikes */
+
+    #as-is { 
+        margin: 88px 0;
+        padding-top: 104px;
+        padding-bottom: 104px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Refurbished Bikes & Steps to Buy a Bike */
+
+    #refurb-and-steps {
+        /* padding: 160px 80px; */
+        width: 345px;
+        margin: 88px 0;
+    }
+
+    #refurb-bikes, #steps-to-buy-bikes {
+        width: 100%;
+    }
+
+    #refurb-img, #steps-to-buy-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #refurb-info, #steps-to-buy-info {
+        padding-top: 40px;
+    }
+
+    #refurb-info p {
+        margin: 16px 0 40px;
+    }
+
+    #btn-donate-now {
+        margin-top: 40px;
+    }
+
+    /* Book an Appointment */
+
+    #book-appointment {
+        background: url(../images/IMG_6988.jpg) center / cover no-repeat;
+        height: 560px;
+    }
+
+    .blur-filter {
+        background-color: rgba(0, 0, 0, 0.56);
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(4px);
+    }
+
+    #book-appointment-p1 {
+        margin: 32px 0;
+    }
+
+    #book-appointment-p2, #book-appointment-p3 {
+        margin: 32px 0;
+    }
+    
+    #book-appointment-info {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     /* Footer */
