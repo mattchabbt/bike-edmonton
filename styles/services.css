@@ -204,7 +204,7 @@ button.btn-filled {
     /* button a b { font-size: 20px; line-height: normal; } */
     /* em { font: 32px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; } */
     /* .img-cap { font: 24px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; } */
-    /* b { font: 18px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; } */
+    b { font: 16px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
 
     /* hides content on mobile verison */
     .hidden-on-mobile { display: none; }

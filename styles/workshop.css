@@ -192,6 +192,7 @@ button.btn-filled {
 .gap-48 { gap: 48px; }
 .gap-56 { gap: 56px; }
 .gap-64 { gap: 64px; }
+.gap-80 { gap: 80px; }
 .gap-104 { gap: 104px; }
 .gap-128 { gap: 128px; }
 
@@ -211,7 +212,7 @@ button.btn-filled {
     /* button a b { font-size: 20px; line-height: normal; } */
     /* em { font: 32px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; } */
     /* .img-cap { font: 24px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; } */
-    /* b { font: 18px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; } */
+    b { font: 16px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
 
     /* hides content on mobile verison */
     .hidden-on-mobile { display: none; }
@@ -237,6 +238,108 @@ button.btn-filled {
         padding-top: 16px;
         padding-bottom: 16px;
     }
+
+    /* Page Title & Subtitle */
+
+    #page-title-subtitle {
+        margin-top: 72px;
+        margin-bottom: 104px;
+    }
+
+    #page-subtitle {
+        display: inline-block;
+        width: 345px;
+        padding-top: 24px;
+    }
+
+    /* Main Information */
+
+    #main-info {
+        margin: 0 auto 200px;
+        width: 345px;
+    }
+
+    #main-info-col1 {
+        width: 345px;
+        gap: 88px;
+        /* margin-left: 21px;
+        margin-right: 17px; */
+    }
+
+    #main-info-01 h2, #main-info-02 h2, #main-info-03 h2, #main-info-04 h2 {
+        margin-bottom: 24px;
+    }
+
+    #main-info-01, #main-info-02, #main-info-03, #main-info-04 {
+        width: 345px;
+    }
+
+    #main-info-03-datetime ul {
+        list-style-type: none;
+        text-decoration: none;
+        text-align: left;
+    }
+
+    #main-info-03-left li { font: 16px "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
+
+    #main-info-03-right { margin-left: 8px; }
+
+    #main-info-03-left li { margin-bottom: 24px }
+    #main-info-03-right li { margin-bottom: 24px }
+
+    #main-info-03-left li:nth-child(2) { margin-bottom: 48px }
+    #main-info-03-right li:nth-child(2) { margin-bottom: 26px }
+
+    /* General Info */
+    .grid-general-info {
+        display: grid;
+        grid-template: repeat(12, 1fr) / repeat(1, 1fr);
+        row-gap: 24px;
+        margin: 0 auto;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    #general-info-title {
+        display: grid;
+        /* grid-area: 1 / 1 / span 1 / span 1; */
+        background-color: #FF6700;
+        padding-left: 24px;
+        align-items: center;
+        border-radius: 24px;
+        height: 200px;
+    }
+    
+    #general-info-block {
+        display: grid;
+        align-items: center;
+        border: 4px solid #8F5833;
+        border-radius: 24px;
+    }
+    
+    #general-info-block-text {
+        margin: auto;
+        text-align: center;
+        width: 268px;
+        font: 18px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif;
+    }
+
+    /* Videos */
+
+    #video-01, #video-02 {
+        width: 100%;
+    }
+
+    #videos-workshop-h2 {
+        margin-bottom: 44px;
+    }
+
+    #videos-workshop {
+        width: 346px;
+        margin: 56px 0;
+    }
+
+    .img-cap { margin-top: 8px; }
 
     /* Footer */
 
@@ -303,6 +406,7 @@ button.btn-filled {
     /* hides content on desktop verison */
     .hidden-on-desktop { display: none; }
 
+    
     /* Layout */
 
     .margin-default { margin: 0 80px; }
