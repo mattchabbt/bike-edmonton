@@ -66,6 +66,8 @@ button a, ul a {
     color: inherit;
 }
 
+#btn-hamburger { width: 40px; height: 40px; }
+
 ul, p, h1, h2, h3 {
     padding: 0;
     margin: 0;
