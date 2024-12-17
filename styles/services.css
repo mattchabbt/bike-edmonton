@@ -59,6 +59,7 @@ body {
     font-size: 16px;
     background-color: #FFFDFA;
     color: #292828;
+    font-family: "Satoshi-Medium", "Open Sans", Helvetica, sans-serif;
 }
 
 button a, ul a {
@@ -342,10 +343,9 @@ button.btn-filled {
 /* Laptop & Desktop */
 @media screen and (min-width: 769px) {
     /* Font Size */
-    h1 { font-size: 88px; line-height: normal; }
-    h2 { font-size: 64px; line-height: normal; }
+    h1 { font: 88px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
+    h2 { font: 64px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
     h2.h2alt, h2#h2alt { font: 44px/normal "Satoshi-Bold", "Open Sans", Helvetica, sans-serif; }
-    h3 { font-size: 32px; line-height: normal; }
     body, b, p, ul, li { font-size: 18px; line-height: normal; }
     li.nav-item { font-size: 16px; line-height: normal; }
     .body-lg { font: 24px/normal "Satoshi-Medium", "Open Sans", Helvetica, sans-serif; }
